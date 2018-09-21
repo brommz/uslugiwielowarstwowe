@@ -1,0 +1,110 @@
+﻿mkdir docker-web  
+mkdir .\docker-web\src  
+mkdir .\docker-web\scripts  
+cd docker-web 
+
+
+dotnet new sln  
+//dotnet new web -n webapp -o .\src\webapp  - lub wejsc i w src webapp i zrobic dotnet new webapi -all
+dotnet sln .\docker-web.sln add .\src\webapp\webapp.csproj
+
+
+dotnet restore  
+dotnet run --project .\src\webapp\webapp.csproj
+
+
+docker pull microsoft/aspnetcore-build:1.0-1.1
+
+
+
+touch docker-compose.build.yml
+	tresc pliku--->
+	version: '2'
+
+	services:  
+	  ci-build:
+		image: microsoft/aspnetcore-build:1.0-1.1
+		container_name: build
+		volumes:
+		  - .:/src
+		working_dir: /src
+		command: /bin/bash -c "dotnet restore ./docker-web.sln && dotnet publish ./docker-web.sln -c Release -o ./build"
+	
+	
+	
+touch build.ci.ps1
+	tresc pliku--->
+	docker-compose -f .\docker-compose.build.yml -p netcorebuild run ci-build
+
+
+.\scripts\build.ci.ps1
+
+
+touch .\src\webapp\Dockerfile
+	tresc pliku--->
+	FROM microsoft/aspnetcore:1.1  
+	ARG source  
+	RUN echo "source: $source"  
+	WORKDIR /app  
+	COPY ${source:-/build} .  
+	EXPOSE 80  
+	ENTRYPOINT ["dotnet", "webapp.dll"]  
+
+
+
+
+
+
+touch docker-compose.yml
+	tresc pliku--->
+	version: '2'
+	services:  
+	  webapp:
+		image: webapp    
+		container_name: webapp
+		build:
+		  context: ./src/webapp
+		  dockerfile: Dockerfile
+		  args:
+			source: ./build
+		ports:
+		  - "5000:80"
+	  redis:
+        image: "redis:alpine"
+
+
+touch scripts\build.ps1
+	tresc pliku--->
+	docker-compose -f .\docker-compose.yml -p webapp build
+	
+	
+	
+
+
+touch scripts\run.ps1
+	tresc pliku--->
+	docker-compose -f .\docker-compose.yml -p webapp up -d
+
+	
+docker logs webapp
+docker stop webapp  
+docker rm webapp  
+docker rmi bec	
+
+
+
+
+
+Ogólny skrót już później:
+.\scripts\build.ci.ps1
+.\scripts\build.ps1
+.\scripts\run.ps1
+
+
+Linux:
+./scripts/build.ci.ps1
+./scripts/build.ps1
+./scripts/run.ps1
+
+
+//testować na np. api/values

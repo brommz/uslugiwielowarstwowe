@@ -1,0 +1,43 @@
+<script src="/_js/libs/jquery-3.2.1.js"></script>
+<script src="/_js/libs/handlebars-v4.0.10.js"></script>
+
+<script src="/_js/libs/ortc-2.1.0.js"></script>
+<script src="/_js/rtc.js"></script>
+
+<script src="/_js/simplePollService.js"></script>
+
+<script id="simplePollTemplate" type="text/x-handlebars-template">
+    Id testu
+    </br>
+    <input class="jsSimplePollId" type="text" value="{{Id}}" disabled="disabled" />
+    </br>
+    Pytanie
+    </br>
+    <input class="jsSimplePollText" type="text" value="{{Text}}" disabled="disabled" />
+    </br>
+    Imie pracownika
+    </br>
+    <input class="jsEmployeeName" type="text" value="JanekZiomek" />
+    </br>
+    <ul class="jsSimplePollOptions" style="list-style: none;">
+    </ul>
+</script>
+
+<script id="optionTemplate" type="text/x-handlebars-template">
+    <li>
+        <div class="jsSimplePollOption">
+            <input class="jsSimplePollOptionId" value="{{Id}}" hidden="hidden">
+            <input type="{{Type}}" name="optionsGroup">
+            <input class="jsSimplePollOptionText" type="text" value="{{Text}}" disabled="disabled" />
+            <button class="jsSaveSimplePollOptionButton" type="button">Zapisz</button>
+        </div>
+    </li>
+</script>
+
+<body>
+    <center>
+        <div class="jsSimplePoll"></div>
+    </center>
+</body>
+
+<script src="/_js/filler.js"></script>

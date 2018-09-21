@@ -1,0 +1,105 @@
+<script src="/_js/libs/jquery-3.2.1.js"></script>
+<script src="/_js/libs/handlebars-v4.0.10.js"></script>
+
+<script src="/_js/simplePollService.js"></script>
+
+<script id="simplePollTemplate" type="text/x-handlebars-template">
+    Id testu
+    </br>
+    <input class="jsSimplePollId" type="text" value="{{Id}}" disabled="disabled" />
+    </br>
+    Pytanie
+    </br>
+    <input class="jsSimplePollText" type="text" value="{{Text}}" disabled="disabled" />
+    </br>
+    Imie pracownika
+    </br>
+    <input class="jsEmployeeName" type="text" value="JanekZiomek" />
+    </br>
+    <ul class="jsSimplePollOptions" style="list-style: none;">
+    </ul>
+</script>
+
+<script id="optionTemplate" type="text/x-handlebars-template">
+    <li>
+        <div class="jsSimplePollOption">
+            <input class="jsSimplePollOptionId" value="{{Id}}" hidden="hidden">
+            <input type="{{Type}}" name="optionsGroup">
+            <input class="jsSimplePollOptionText" type="text" value="{{Text}}" />
+            <button class="jsSaveSimplePollOptionButton" type="button">Zapisz</button>
+        </div>
+    </li>
+</script>
+
+<body>
+    <center>
+        <div class="jsSimplePoll"></div>
+    </center>
+</body>
+
+<script>
+    function querystring(key) {
+        var re = new RegExp('(?:\\?|&)' + key + '=(.*?)(?=&|$)', 'gi');
+        var r = [],
+            m;
+        while ((m = re.exec(document.location.search)) != null) r[r.length] = m[1];
+        return r;
+    }
+
+    function getSimplePollHtml(simplePoll) {
+        var templateScript = $("#simplePollTemplate").html();
+        var template = Handlebars.compile(templateScript);
+        var compiledHtml = template(simplePoll);
+        return compiledHtml;
+    }
+
+    function getSimplePollOptionHtml(simplePollOption) {
+        var templateScript = $("#optionTemplate").html();
+        var template = Handlebars.compile(templateScript);
+        var compiledHtml = template(simplePollOption);
+        return compiledHtml;
+    }
+
+    var simplePollService = simplePollService();
+
+    var simplePoll = null;
+    var simplePollId = querystring('id');
+    simplePollService.getSimplePoll(simplePollId)
+        .done(function(data) {
+            simplePoll = data;
+            $('.jsSimplePoll').html(getSimplePollHtml(simplePoll));
+
+            var $options = $('.jsSimplePoll').find('.jsSimplePollOptions');
+            for (var i = 0; i < simplePoll.Options.length; i++) {
+                var option = simplePoll.Options[i];
+                var optionModel = {
+                    Id: option.Id,
+                    Type: simplePoll.Type == 0 ? 'radio' : 'checkbox',
+                    Text: option.Text
+                };
+                var optionHtml = getSimplePollOptionHtml(optionModel);
+                $options.append(optionHtml);
+            }
+        });
+
+    $(document).on("click", '.jsSaveSimplePollOptionButton', function(e) {
+        $(this).attr('disabled', 'disabled');
+        if (simplePoll.Type == 0) {
+            $('.jsSaveSimplePollOptionButton').attr('disabled', 'disabled');
+        }
+
+        var $optionId = $(this).parent().find('.jsSimplePollOptionId');
+        var $employeeName = $('.jsEmployeeName');
+
+        var data = {
+            SimplePollId: simplePoll.Id,
+            SimplePollOptionId: $optionId.val(),
+            EmployeeName: $employeeName.val()
+        };
+        simplePollService.addAnswerToSimplePollOption(data)
+            .done(function(result) {
+                alert(JSON.stringify(data));
+            });
+
+    });
+</script>

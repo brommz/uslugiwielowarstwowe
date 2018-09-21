@@ -1,0 +1,16 @@
+/src/src/webapp/bin/Release/netcoreapp1.1/webapp.deps.json
+/src/src/webapp/bin/Release/netcoreapp1.1/webapp.runtimeconfig.json
+/src/src/webapp/bin/Release/netcoreapp1.1/webapp.runtimeconfig.dev.json
+/src/src/webapp/bin/Release/netcoreapp1.1/webapp.dll
+/src/src/webapp/bin/Release/netcoreapp1.1/webapp.pdb
+/src/src/webapp/obj/Release/netcoreapp1.1/webapp.AssemblyInfo.cs
+/src/src/webapp/obj/Release/netcoreapp1.1/webapp.dll
+/src/src/webapp/obj/Release/netcoreapp1.1/webapp.pdb
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/bin/Release/netcoreapp1.1/webapp.deps.json
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/bin/Release/netcoreapp1.1/webapp.runtimeconfig.json
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/bin/Release/netcoreapp1.1/webapp.runtimeconfig.dev.json
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/bin/Release/netcoreapp1.1/webapp.dll
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/bin/Release/netcoreapp1.1/webapp.pdb
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/obj/Release/netcoreapp1.1/webapp.AssemblyInfo.cs
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/obj/Release/netcoreapp1.1/webapp.dll
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/obj/Release/netcoreapp1.1/webapp.pdb

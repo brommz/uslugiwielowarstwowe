@@ -1,0 +1,40 @@
+<script src="/_js/libs/jquery-3.2.1.js"></script>
+<script src="/_js/libs/handlebars-v4.0.10.js"></script>
+
+<script src="/_js/simplePollService.js"></script>
+
+<script id="newOptionTemplate" type="text/x-handlebars-template">
+    <li>
+        <div class="jsSimplePollOption">
+            <input type="{{type}}">
+            <input class="jsSimplePollOptionText" type="text" value="{{sampleText}}" />
+            <button class="jsSaveSimplePollOptionButton" type="button">{{saveText}}</button>
+        </div>
+    </li>
+</script>
+
+<body>
+    <center>
+
+        Id testu
+        </br>
+        <input class="jsSimplePollId" type="text" value="" readonly="readonly" />
+        </br>
+        Pytanie
+        </br>
+        <input class="jsSimplePollText" type="text" value="" />
+        </br>
+        <button class="jsSaveSimplePollButton" type="button">Zapisz test</button>
+        </br>
+        <input class="jsSimplePollType" type="checkbox" name="simplePollType" value="">Pytania wielokrotnego wyboru
+        </br>
+        <button class="jsAddOption" type="button">Dodaj pytanie</button>
+        </br>
+
+        <ul class="jsSimplePollOptions" style="list-style: none;">
+        </ul>
+
+    </center>
+</body>
+
+<script src="/_js/creator.js"></script>

@@ -1,0 +1,5 @@
+Swagger /swagger/v1/swagger.json
+
+npm install -g spectacle-docs
+spectacle -d swagger.json
+

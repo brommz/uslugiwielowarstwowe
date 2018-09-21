@@ -1,0 +1,36 @@
+<script src="/_js/libs/jquery-3.2.1.js"></script>
+<script src="/_js/libs/handlebars-v4.0.10.js"></script>
+
+<script src="/_js/libs/ortc-2.1.0.js"></script>
+<script src="/_js/rtc.js"></script>
+
+<script src="/_js/simplePollService.js"></script>
+
+<script id="singleResultTemplate" type="text/x-handlebars-template">
+    <tr>
+        <th>{{OptionText}}</th>
+        <th>
+            {{#each EmployeeNames}}
+                {{this}},
+            {{/each}}
+        </th>
+        <th>{{AnswersCount}}</th>
+    </tr>
+</script>
+
+<body>
+    <center>
+        Id testu: <div class="jsSimplePollId"></div>
+        Pytanie: <div class="jsSimplePollText"></div>
+        <p>Odpowiedzi:</p>
+        <table class="jsSimplePollResults style="width:100%" border="1">
+            <tr>
+                <th>Opcja</th>
+                <th>Pracownicy</th>
+                <th>Liczba odpowiedzi na opcjê</th>
+            </tr>
+        </table> 
+    </center>
+</body>
+
+<script src="/_js/resulter.js"></script>

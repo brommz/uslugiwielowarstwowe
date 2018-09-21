@@ -1,0 +1,8 @@
+/src/src/webui/bin/Release/netcoreapp1.1/webui.deps.json
+/src/src/webui/bin/Release/netcoreapp1.1/webui.runtimeconfig.json
+/src/src/webui/bin/Release/netcoreapp1.1/webui.runtimeconfig.dev.json
+/src/src/webui/bin/Release/netcoreapp1.1/webui.dll
+/src/src/webui/bin/Release/netcoreapp1.1/webui.pdb
+/src/src/webui/obj/Release/netcoreapp1.1/webui.AssemblyInfo.cs
+/src/src/webui/obj/Release/netcoreapp1.1/webui.dll
+/src/src/webui/obj/Release/netcoreapp1.1/webui.pdb

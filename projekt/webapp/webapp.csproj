@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\handlebar.html" />
+    <Content Include="wwwroot\index.html" />
+    <Content Include="wwwroot\_js\creator.js" />
+    <Content Include="wwwroot\_js\filler.js" />
+    <Content Include="wwwroot\_js\handlebars_tests.js" />
+    <Content Include="wwwroot\_js\libs\handlebars_tests.js" />
+    <Content Include="wwwroot\_js\libs\resulter.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\_js\libs\rtc.js" />
+    <Content Include="wwwroot\_js\resulter.js" />
+    <Content Include="wwwroot\_js\rtc.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="ServiceStack.Redis.Core" Version="1.0.42" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

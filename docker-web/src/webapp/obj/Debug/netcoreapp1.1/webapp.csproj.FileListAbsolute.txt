@@ -1,0 +1,18 @@
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/bin/Debug/netcoreapp1.1/webapp.deps.json
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/bin/Debug/netcoreapp1.1/webapp.runtimeconfig.json
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/bin/Debug/netcoreapp1.1/webapp.runtimeconfig.dev.json
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/bin/Debug/netcoreapp1.1/webapp.dll
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/bin/Debug/netcoreapp1.1/webapp.pdb
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/obj/Debug/netcoreapp1.1/webapp.csprojResolveAssemblyReference.cache
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/obj/Debug/netcoreapp1.1/webapp.AssemblyInfo.cs
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/obj/Debug/netcoreapp1.1/webapp.dll
+/home/bartek/Pulpit/uslugiwielowarstwowe/docker-web/src/webapp/obj/Debug/netcoreapp1.1/webapp.pdb
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webapp\bin\Debug\netcoreapp1.1\webapp.deps.json
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webapp\bin\Debug\netcoreapp1.1\webapp.runtimeconfig.json
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webapp\bin\Debug\netcoreapp1.1\webapp.runtimeconfig.dev.json
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webapp\bin\Debug\netcoreapp1.1\webapp.dll
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webapp\bin\Debug\netcoreapp1.1\webapp.pdb
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webapp\obj\Debug\netcoreapp1.1\webapp.csprojResolveAssemblyReference.cache
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webapp\obj\Debug\netcoreapp1.1\webapp.AssemblyInfo.cs
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webapp\obj\Debug\netcoreapp1.1\webapp.dll
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webapp\obj\Debug\netcoreapp1.1\webapp.pdb

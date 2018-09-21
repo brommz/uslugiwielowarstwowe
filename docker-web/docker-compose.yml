@@ -1,0 +1,15 @@
+version: '2'
+
+services:  
+  webapp:
+    image: webapp   
+    container_name: webapp
+    build:
+      context: ./src/webapp
+      dockerfile: Dockerfile
+      args:
+        source: ./build
+    ports:
+      - "5000:80"
+  redis:
+    image: "redis:alpine"

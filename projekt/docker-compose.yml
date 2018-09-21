@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  webapp:
+    image: webapp
+    build:
+      context: ./webapp
+      dockerfile: Dockerfile
+  redis:
+    image: "redis:alpine"

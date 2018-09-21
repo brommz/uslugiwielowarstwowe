@@ -1,0 +1,7 @@
+ Date purchased 6/9/2017 
+ Current Billing Period 6/1/2017 - 6/30/2017
+ Application Key ###
+ Private Key ### 
+ Subscription ID 9ce2b58c6b664c0da773d34916fc5637 
+ Account Type Realtime Messaging 
+ Free Status Active 

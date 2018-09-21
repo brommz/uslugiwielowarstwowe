@@ -1,0 +1,830 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API projekt Testy Wiedzy - Aplikacje Wielowarstwowe | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>API Reference</h5>
+          <a href="#introduction">Introduction</a>
+          <!-- <h5>Security</h5> -->
+          <a href="#authentication">Authentication</a>
+          <h5>Operations</h5>
+          <section>
+            <a href="#tag-Answers">Answers</a>
+            <ul>
+              <li>
+                <a href="#operation--api-Answers--simplePollId--get"> GET /api/Answers/{simplePollId} </a>
+              </li>
+              <li>
+                <a href="#operation--api-Answers-post"> POST /api/Answers </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <a href="#tag-Options">Options</a>
+            <ul>
+              <li>
+                <a href="#operation--api-Options-post"> POST /api/Options </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <a href="#tag-SimplePolls">SimplePolls</a>
+            <ul>
+              <li>
+                <a href="#operation--api-SimplePolls--simplePollId--get"> GET /api/SimplePolls/{simplePollId} </a>
+              </li>
+              <li>
+                <a href="#operation--api-SimplePolls-post"> POST /api/SimplePolls </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <a href="#tag-Values">Values</a>
+            <ul>
+              <li>
+                <a href="#operation--api-Values-get"> GET /api/Values </a>
+              </li>
+              <li>
+                <a href="#operation--api-Values-post"> POST /api/Values </a>
+              </li>
+              <li>
+                <a href="#operation--api-Values--id--get"> GET /api/Values/{id} </a>
+              </li>
+              <li>
+                <a href="#operation--api-Values--id--put"> PUT /api/Values/{id} </a>
+              </li>
+              <li>
+                <a href="#operation--api-Values--id--delete"> DELETE /api/Values/{id} </a>
+              </li>
+            </ul>
+          </section>
+          <h5>Schema Definitions</h5>
+          <a href="#definition-SimplePollAnswerUpdateModel"> SimplePollAnswerUpdateModel </a>
+          <a href="#definition-SimplePollOptionUpdateModel"> SimplePollOptionUpdateModel </a>
+          <a href="#definition-SimplePollUpdateModel"> SimplePollUpdateModel </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <div id="introduction" data-traverse-target="introduction">
+            <h1 class="doc-title">API projekt Testy Wiedzy - Aplikacje Wielowarstwowe
+              <span>API Reference</span>
+            </h1>
+            <div class="doc-row">
+              <div class="doc-copy"> undefined </div>
+              <div class="doc-examples">
+                <section>
+                  <!--
+          
+                  -->
+                  <h5>Version:
+                    <span>v1</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <!-- <h1 id="security" data-traverse-target="security">Security</h1> -->
+          <h1 id="authentication" data-traverse-target="authentication">Authentication</h1>
+          <h1 id="tag-Answers" class="swagger-summary-tag" data-traverse-target="tag-Answers">Answers</h1>
+          <div id="operation--api-Answers--simplePollId--get" class="operation panel" data-traverse-target="operation--api-Answers--simplePollId--get">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-Answers">Answers</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-name">
+                <span class="operation-name">GET</span>
+                <span class="operation-path">/api/Answers/{simplePollId}</span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">simplePollId</div>
+                      <span class="json-property-required"></span>
+                    </div>
+                    <div class="prop-value">
+                      <p class="no-description">(no description)</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">type</div>
+                    <div class="prop-value">
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-format">(uuid)</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">in</div>
+                    <div class="prop-value">path</div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Success</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"> </div>
+            </div>
+          </div>
+          <div id="operation--api-Answers-post" class="operation panel" data-traverse-target="operation--api-Answers-post">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-Answers">Answers</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-name">
+                <span class="operation-name">POST</span>
+                <span class="operation-path">/api/Answers</span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/SimplePollAnswerUpdateModel">SimplePollAnswerUpdateModel</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->undefined
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;simplePollId&quot;</span>: <span class="hljs-string">&quot;string (uuid)&quot;</span>,
+  <span class="hljs-attr">&quot;simplePollOptionId&quot;</span>: <span class="hljs-string">&quot;string (uuid)&quot;</span>,
+  <span class="hljs-attr">&quot;employeeName&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Success</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"> </div>
+            </div>
+          </div>
+          <h1 id="tag-Options" class="swagger-summary-tag" data-traverse-target="tag-Options">Options</h1>
+          <div id="operation--api-Options-post" class="operation panel" data-traverse-target="operation--api-Options-post">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-Options">Options</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-name">
+                <span class="operation-name">POST</span>
+                <span class="operation-path">/api/Options</span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/SimplePollOptionUpdateModel">SimplePollOptionUpdateModel</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->undefined
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;simplePollId&quot;</span>: <span class="hljs-string">&quot;string (uuid)&quot;</span>,
+  <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Success</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"> </div>
+            </div>
+          </div>
+          <h1 id="tag-SimplePolls" class="swagger-summary-tag" data-traverse-target="tag-SimplePolls">SimplePolls</h1>
+          <div id="operation--api-SimplePolls--simplePollId--get" class="operation panel" data-traverse-target="operation--api-SimplePolls--simplePollId--get">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-SimplePolls">SimplePolls</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-name">
+                <span class="operation-name">GET</span>
+                <span class="operation-path">/api/SimplePolls/{simplePollId}</span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">simplePollId</div>
+                      <span class="json-property-required"></span>
+                    </div>
+                    <div class="prop-value">
+                      <p class="no-description">(no description)</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">type</div>
+                    <div class="prop-value">
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-format">(uuid)</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">in</div>
+                    <div class="prop-value">path</div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Success</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"> </div>
+            </div>
+          </div>
+          <div id="operation--api-SimplePolls-post" class="operation panel" data-traverse-target="operation--api-SimplePolls-post">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-SimplePolls">SimplePolls</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-name">
+                <span class="operation-name">POST</span>
+                <span class="operation-path">/api/SimplePolls</span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body">
+                  <div class="prop-row">
+                    <div class="prop-name">
+                      <div class="swagger-request-model">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/SimplePollUpdateModel">SimplePollUpdateModel</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="prop-value columns small-6">
+                      <!-- <div class="swagger-request-description"> -->undefined
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;integer (int32)&quot;</span>,
+  <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Success</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"> </div>
+            </div>
+          </div>
+          <h1 id="tag-Values" class="swagger-summary-tag" data-traverse-target="tag-Values">Values</h1>
+          <div id="operation--api-Values-get" class="operation panel" data-traverse-target="operation--api-Values-get">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-Values">Values</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-name">
+                <span class="operation-name">GET</span>
+                <span class="operation-path">/api/Values</span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref"></div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Success</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <div class="hljs"><pre><code class="lang-json">[
+  <span class="hljs-string">&quot;string&quot;</span>
+]
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="operation--api-Values-post" class="operation panel" data-traverse-target="operation--api-Values-post">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-Values">Values</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-name">
+                <span class="operation-name">POST</span>
+                <span class="operation-path">/api/Values</span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body"> </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <div class="hljs"><pre><code class="lang-json"><span class="hljs-string">&quot;string&quot;</span>
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Success</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"> </div>
+            </div>
+          </div>
+          <div id="operation--api-Values--id--get" class="operation panel" data-traverse-target="operation--api-Values--id--get">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-Values">Values</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-name">
+                <span class="operation-name">GET</span>
+                <span class="operation-path">/api/Values/{id}</span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">id</div>
+                      <span class="json-property-required"></span>
+                    </div>
+                    <div class="prop-value">
+                      <p class="no-description">(no description)</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">type</div>
+                    <div class="prop-value">
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-format">(int32)</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">in</div>
+                    <div class="prop-value">path</div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref"></div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Success</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <div class="hljs"><pre><code class="lang-json"><span class="hljs-string">&quot;string&quot;</span>
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="operation--api-Values--id--put" class="operation panel" data-traverse-target="operation--api-Values--id--put">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-Values">Values</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-name">
+                <span class="operation-name">PUT</span>
+                <span class="operation-path">/api/Values/{id}</span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-body"> </section>
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">id</div>
+                      <span class="json-property-required"></span>
+                    </div>
+                    <div class="prop-value">
+                      <p class="no-description">(no description)</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">type</div>
+                    <div class="prop-value">
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-format">(int32)</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">in</div>
+                    <div class="prop-value">path</div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Request Example</h5>
+                  <div class="hljs"><pre><code class="lang-json"><span class="hljs-string">&quot;string&quot;</span>
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Success</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"> </div>
+            </div>
+          </div>
+          <div id="operation--api-Values--id--delete" class="operation panel" data-traverse-target="operation--api-Values--id--delete">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-Values">Values</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-name">
+                <span class="operation-name">DELETE</span>
+                <span class="operation-path">/api/Values/{id}</span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">id</div>
+                      <span class="json-property-required"></span>
+                    </div>
+                    <div class="prop-value">
+                      <p class="no-description">(no description)</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">type</div>
+                    <div class="prop-value">
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-format">(int32)</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">in</div>
+                    <div class="prop-value">path</div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Success</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"> </div>
+            </div>
+          </div>
+          <h1>Schema Definitions</h1>
+          <div id="definition-SimplePollAnswerUpdateModel" class="definition panel" data-traverse-target="definition-SimplePollAnswerUpdateModel">
+            <h2 class="panel-title">
+              <a name="/definitions/SimplePollAnswerUpdateModel"></a>SimplePollAnswerUpdateModel:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="simplePollId">
+                      <span class="json-property-name">simplePollId:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-format">(uuid)</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="simplePollOptionId">
+                      <span class="json-property-name">simplePollOptionId:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-format">(uuid)</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="employeeName">
+                      <span class="json-property-name">employeeName:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;simplePollId&quot;</span>: <span class="hljs-string">&quot;string (uuid)&quot;</span>,
+  <span class="hljs-attr">&quot;simplePollOptionId&quot;</span>: <span class="hljs-string">&quot;string (uuid)&quot;</span>,
+  <span class="hljs-attr">&quot;employeeName&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-SimplePollOptionUpdateModel" class="definition panel" data-traverse-target="definition-SimplePollOptionUpdateModel">
+            <h2 class="panel-title">
+              <a name="/definitions/SimplePollOptionUpdateModel"></a>SimplePollOptionUpdateModel:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="simplePollId">
+                      <span class="json-property-name">simplePollId:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-format">(uuid)</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="text">
+                      <span class="json-property-name">text:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;simplePollId&quot;</span>: <span class="hljs-string">&quot;string (uuid)&quot;</span>,
+  <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-SimplePollUpdateModel" class="definition panel" data-traverse-target="definition-SimplePollUpdateModel">
+            <h2 class="panel-title">
+              <a name="/definitions/SimplePollUpdateModel"></a>SimplePollUpdateModel:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="type">
+                      <span class="json-property-name">type:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-format">(int32)</span>
+                      <span class="json-property-enum" title="Possible values">, x &isin; {
+                        <span class="json-property-enum-item">0</span> ,
+                        <span class="json-property-enum-item">1</span> } </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="text">
+                      <span class="json-property-name">text:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;integer (int32)&quot;</span>,
+  <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+            <div class="doc-copy doc-separator">
+              <a class="powered-by" href="https://sourcey.com/spectacle">Documentation by
+                <span>Spectacle</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

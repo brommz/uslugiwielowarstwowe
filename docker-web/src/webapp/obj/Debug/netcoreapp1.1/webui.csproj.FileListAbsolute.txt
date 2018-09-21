@@ -1,0 +1,8 @@
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webui\bin\Debug\netcoreapp1.1\webui.deps.json
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webui\bin\Debug\netcoreapp1.1\webui.runtimeconfig.json
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webui\bin\Debug\netcoreapp1.1\webui.runtimeconfig.dev.json
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webui\bin\Debug\netcoreapp1.1\webui.dll
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webui\bin\Debug\netcoreapp1.1\webui.pdb
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webui\obj\Debug\netcoreapp1.1\webui.AssemblyInfo.cs
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webui\obj\Debug\netcoreapp1.1\webui.dll
+C:\Users\Bartek\Documents\Visual Studio 2017\Projects\uslugiwielowarstwowe\docker-web\src\webui\obj\Debug\netcoreapp1.1\webui.pdb
